@@ -34,7 +34,7 @@ Undjike\NmfsUploads\NmfsUploadsServiceProvider::class
 After installing the package via composer, you will need to publish the configurations of the package. Use the following artisan command:
 
 ```php
-php artisan vendor:publish Undjike\NmfsUploads\NmfsUploadsServiceProvider
+php artisan vendor:publish --provider="Undjike\NmfsUploads\NmfsUploadsServiceProvider"
 ```
 
 This will publish all the necessaries for the package to work and some files to demonstrate how to use this package.
