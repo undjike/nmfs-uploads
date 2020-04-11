@@ -1,0 +1,26 @@
+{
+    "name": "undjike/nmfs-uploads",
+    "description": "This package allows you to perform uploads of no matter file size to your PHP server",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ulrich Pascal Ndjike Zoa",
+            "email": "ndjikezoaulrich@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Undjike\\NmfsUploads\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Undjike\\NmfsUploads\\NmfsUploadsServiceProvider"
+            ]
+        }
+    }
+}

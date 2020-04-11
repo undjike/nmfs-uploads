@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * *
+ *  * # nmfs-uploads
+ *  *
+ *  * @author    Ulrich Pascal Ndjike Zoa <ndjikezoaulrich@gmail.com>
+ *  * @copyright 2020 Ulrich Pascal Ndjike Zoa / RYS Studio
+ *  * @license   http://www.opensource.org/licenses/mit-license.php MIT
+ *  * @link      https://github.com/undjike/nmfs-uploads
+ *
+ */
+
+namespace App\Http\Controllers;
+
+use Illuminate\Contracts\View\Factory;
+use Illuminate\View\View;
+use Undjike\NmfsUploads\Uploader;
+
+class NmfsUploadsController extends Controller
+{
+    /**
+     * Show the upload page
+     *
+     * @return Factory|View
+     */
+    public function index()
+    {
+        return view('nmfs-uploads');
+    }
+
+    /**
+     * Perform file upload
+     *
+     * @return void
+     */
+    public function perform()
+    {
+        Uploader::receive(function ($response) {
+            // TODO: Perform some actions on upload done
+        });
+    }
+}

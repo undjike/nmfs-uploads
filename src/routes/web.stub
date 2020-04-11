@@ -1,0 +1,7 @@
+
+
+// Routes generated for demonstration uses of nmfs-uploads package
+// Feel free to delete them when you are done
+
+Route::get('uploads', 'NmfsUploadsController@index')->name('upload');
+Route::post('uploads', 'NmfsUploadsController@perform')->name('perform.upload');
